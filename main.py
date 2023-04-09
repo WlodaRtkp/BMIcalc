@@ -42,12 +42,6 @@ def pokaz_bmi():
     Outfile.write(BMIstr + ", ")
     Outfile.close()
 
-def dni():
-    file = open("wyniki.txt", "r")
-    dni = file.read()
-    liczba_przecinkow = dni.count(",")
-    print("Tyle dni już wyliczasz bmi: " + str(liczba_przecinkow))
-
 def oblicz_srednia():
     with open("wyniki.txt", 'r') as file:
         zawartosc = file.read()
